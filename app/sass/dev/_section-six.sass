@@ -1,0 +1,60 @@
+// --  Секция 6 -------------- //
+
+.section-six
+	position: relative
+	height: 600px
+	margin-bottom: 100px
+
+	.container
+		position: relative
+
+		// Блок информации
+		.section-six__block-info
+			position: relative
+			top: 200px
+			width: 550px
+			height: auto
+			padding: 30px
+			border-radius: 5px
+			background: #f9f9f9
+			border: 1px solid #efefef
+			&::before
+				content: ''
+				position: absolute
+				top: -180px
+				right: -100px
+				width: 350px
+				height: 350px
+				background: url('../img/im/images-01.png')
+				background-size: 100%
+				background-repeat: no-repeat
+				background-position: 50% 50%
+
+			// Заголовок
+			.section-six__block-info__title
+				display: inline-block
+				width: 100%
+				margin-bottom: 30px
+
+			// Текст
+			.section-six__block-info__text
+				display: inline-block
+				width: 85%
+
+		// Блок изображения
+		.section-six__block-images
+			position: absolute
+			top: 170px
+			right: 0
+			width: 670px
+			height: 465px
+			border-radius: 5px
+			background: url('../img/im/im.jpg')
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1)
+
+
+
+// --  END Секция 6 ---------- //

@@ -1,0 +1,182 @@
+// --  Секция 1 ------ //
+.section-one
+	position: relative
+	overflow: hidden
+	max-width: 100%
+	height: 800px
+	background: #ececec
+	background: -webkit-linear-gradient(to right, #f9f9f9, #ececec)
+	background: linear-gradient(to right, #f9f9f9, #ececec)
+
+	// меню (мобильная версия)
+	.mob-menu
+		position: fixed
+		right: -350px
+		min-width: 300px
+		height: 100vh
+		padding: 30px
+		background: $color-footer
+		border-right: 1px solid #ececec
+		box-shadow: -1px 0 10px 1px rgba(0, 0, 0, 0.1)
+		z-index: 100
+
+		// крестик
+		.mob-menu__close
+			position: absolute
+			width: 25px
+			height: 25px
+			cursor: pointer
+			.mob-menu__close-line
+				position: absolute
+				top: 15px
+				width: 25px
+				height: 4px
+				background: $color-text-2
+				transform: rotate(45deg)
+				&::before
+					content: ''
+					position: absolute
+					width: inherit
+					height: inherit
+					background: inherit
+					transform: rotate(90deg)
+				&:hover,
+				&:hover::before
+					background: $color-button-1
+					transition: all 0.5s
+
+		.items-menu
+			margin-top: 60px
+			li
+				a
+					display: block
+					width: 100%
+					padding: 15px
+					margin-bottom: 15px
+					border-radius: 5px
+					border: 1px solid #d3e0e9
+					text-align: right
+					cursor: pointer
+					overflow: hidden
+
+					&:hover
+						background: #f1e0d8
+						transition: all 0.6s
+						transform: translateY(5px)
+
+	// шапка сайта
+	.section-one__header
+		width: 100%
+		padding-top: 30px
+		padding-bottom: 30px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		z-index: 1
+
+
+
+		// Меню
+		.menu
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			margin: 0 auto
+			li
+				padding-right: 30px
+
+
+		// иконка «бергер»
+		.icon-burger
+			display: none
+			position: relative
+			width: 25px
+			height: 25px
+			cursor: pointer
+
+			.burger-line
+				position: absolute
+				top: 10px
+				width: 25px
+				height: 4px
+				border-radius: 5px
+				background: $color-text-default
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+					width: inherit
+					height: inherit
+					background: inherit
+					border-radius: inherit
+				&::before
+					bottom: 10px
+				&::after
+					top: 10px
+
+
+
+	// Основной заголовок
+	.section-one__main-title
+		position: relative
+		width: 100%
+		z-index: 1
+
+		.main-title
+			font-family: $text-header
+			font-size: 60px
+			line-height: 1
+			margin-top: 150px
+
+		.main-subtitle
+			font-size: 20px
+			z-index: 1
+
+	// Кнопка
+	.section-one__button
+		margin-top: 40px
+
+	// Подтекст
+	.section_one__podtekst
+		width: 100%
+		float: left
+		margin-top: 15px
+		color: $color-text-2
+		margin-bottom: 150px
+
+
+	.section-one__imges-main
+		position: relative
+		top: 0
+		right: 10%
+		width: 130%
+		height: 100%
+		background-image: url('../img/images-main.png')
+		background-position: 40% 100%
+		background-repeat: no-repeat
+		background-size: 125%
+		z-index: 0
+// --  End Секция 1 -- //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+// --  Секция 5 ---------- //
+
+.section-five
+	position: relative
+	min-height: 400px
+	margin-bottom: 40px
+
+	// Заголовок ↓
+	.section-four__title
+		margin-bottom: 40px
+
+	// Блоки информации ↓
+	.section-five__blocks
+
+		// стилизация блока ↓
+		.blocks__block-info
+			width: 31%
+			min-height: 280px
+			height: auto
+			padding: 30px
+			margin: 1%
+			border-radius: 5px
+			background: #f9f9f9
+			border: 1px solid #efefef
+			float: left
+
+			// Иконки блоков ↓
+			.icon-1,
+				background: url('../img/block-info/images-03.png')
+			.icon-2,
+				background: url('../img/block-info/images-01.png')
+			.icon-3
+				background: url('../img/block-info/images-02.png')
+
+			.block-info__icon
+				width: 70px
+				height: 50px
+				background-size: 90%
+				background-repeat: no-repeat
+				background-position: 0% 50%
+				margin-bottom: 15px
+
+			.block-info__text
+				a
+					color: $color-text-1
+					border-bottom: 1px dashed $color-text-1
+				span
+					color: $color-text-2
+					font-size: 16px
+
+		// изображение ягод
+		.img-before
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				bottom: -80px
+				right: -80px
+				width: 150px
+				height: 150px
+				background: url('../img/block-info/images-before.png')
+				background-size: 100%
+				background-repeat: no-repeat
+				background-position: 50% 50%
+
+
+
+
+
+
+// --  END Секция 5 ------ //
+
+

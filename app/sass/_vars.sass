@@ -1,0 +1,110 @@
+$color-fon-default: #ffffff
+$color-footer: #f4eeeb
+$color-text-default: #191c2c
+$color-button-1: #ff3a3a
+
+$color-fon-2: #f9f9f9
+$color-border: #efefef
+$color-text-1: #ff3a3a
+$color-text-2: #797979
+
+$text-size-dafault: 17px
+$text-size-mini: 0.8em
+
+$text-header: 'FuturaPt-700', sans-serif
+$text-p-bold: 'FuturaPt-700', sans-serif
+$text-p: 'FuturaPt-300', sans-serif
+$text-min: 'FuturaPt-300', sans-serif
+
+
+.button
+  display: inline-block
+  padding: 18px 45px
+  border-radius: 5px
+  background: $color-button-1
+  text-align: center
+  color: #ffffff
+  cursor: pointer
+
+// логотип
+.logo
+  p
+    font-family: $text-p-bold
+    float: left
+
+  // точка между словами
+  .point
+    color: $color-button-1
+    line-height: 0.8
+    padding-right: 5px
+    padding-left: 5px
+    font-size: 20px
+
+// Крестик
+.close
+  position: absolute
+  top: 15px
+  right: 15px
+  width: 30px
+  height: 30px
+  cursor: pointer
+
+  &::after,
+  &::before
+    content: ''
+    position: absolute
+    top: 15px
+    right: 0
+    width: 30px
+    height: 3px
+    background: #252525
+
+  &::after
+    transform: rotate(45deg)
+
+  &::before
+    transform: rotate(-45deg)
+
+
+// Контакты
+.contact
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  // телефон
+  .contact__phone
+    font-family: $text-p-bold
+
+  // время приема звонка
+  .contact__info
+    font-size: $text-size-mini
+// жирный текст
+.txtb
+  font-family: $text-p-bold
+
+.title
+  position: relative
+  width: 100%
+  padding-left: 15px
+  font-family: $text-p-bold
+
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    width: 5px
+    height: 25px
+    margin-right: -15px
+    background: $color-button-1
+
+
+// Уменьшенный шрифт цифры
+b
+  font-weight: normal
+  font-size: 0.7em
+// --  = Vars -- //
+

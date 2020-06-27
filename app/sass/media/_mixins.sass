@@ -1,0 +1,31 @@
+// --  Mixin -- //
+
+=respond-to($media)
+
+  @if $media == my-set-1199
+    @media only screen and (max-width: 1199px)
+      @content
+
+  @if $media == my-set-min-991
+    @media only screen and (min-width: 991px)
+      @content
+
+  @if $media == my-set-991
+    @media only screen and (max-width: 991px)
+      @content
+
+  @if $media == my-set-767
+    @media only screen and (max-width: 767px)
+      @content
+
+  @if $media == my-set-574
+    @media only screen and (max-width: 574px)
+      @content
+
+  // ----------------------------------------
+
+  @if $media == my-set-415
+    @media only screen and (max-width: 415px)
+      @content
+
+// --  = Mixin -- //

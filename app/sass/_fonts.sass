@@ -1,0 +1,22 @@
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff')
+
+@include font('FuturaPt-100', lighter, 100, '../fonts/FuturaPT_Light/FuturaPT-Light.woff')
+@include font('FuturaPt-100', lighter, 100, '../fonts/FuturaPT_Light/FuturaPT-Light.eot')
+@include font('FuturaPt-100', lighter, 100, '../fonts/FuturaPT_Light/FuturaPT-Light.ttf')
+
+@include font('FuturaPt-300', normal, 300, '../fonts/FuturaPT_Book/FuturaPT-Book.woff')
+@include font('FuturaPt-300', normal, 300, '../fonts/FuturaPT_Book/FuturaPT-Book.eot')
+@include font('FuturaPt-300', normal, 300, '../fonts/FuturaPT_Book/FuturaPT-Book.ttf')
+
+@include font('FuturaPt-700', bold, 700, '../fonts/FuturaPT_Bold/FuturaPT-Bold.woff')
+@include font('FuturaPt-700', bold, 700, '../fonts/FuturaPT_Bold/FuturaPT-Bold.eot')
+@include font('FuturaPt-700', bold, 700, '../fonts/FuturaPT_Bold/FuturaPT-Bold.ttf')
+
+@include font('FuturaPt-900', bolder, 900, '../fonts/FuturaPT_ExtraBold/FuturaPT-ExtraBold.woff')
+@include font('FuturaPt-900', bolder, 900, '../fonts/FuturaPT_ExtraBold/FuturaPT-ExtraBold.eot')
+@include font('FuturaPt-900', bolder, 900, '../fonts/FuturaPT_ExtraBold/FuturaPT-ExtraBold.ttf')

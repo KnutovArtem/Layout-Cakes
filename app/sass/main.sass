@@ -1,0 +1,44 @@
+@import "vars"
+@import "base"
+
+@import "fonts"
+@import "reset"
+@import "../libs/boodstrap-grid/bootstrap-grid.css"
+
+@import "dev/section-one"
+@import "dev/section-two"
+@import "dev/section-three"
+@import "dev/section-four"
+@import "dev/section-five"
+@import "dev/section-six"
+@import "dev/footer"
+
+@import "media/_media"
+
+
+body
+  position: relative
+  width: 100%
+  height: 100%
+  background: $color-fon-default
+  font-family: $text-p
+  color: $color-text-default
+  font-size: $text-size-dafault
+  line-height: 1.65
+  overflow-x: hidden
+
+  .wrapper
+    position: relative
+    min-height: 100%
+    overflow: hidden
+
+    .main-content
+      padding-bottom: 250px
+
+    .footer
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 250px
+      background: $color-footer

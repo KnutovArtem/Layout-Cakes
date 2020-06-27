@@ -1,0 +1,300 @@
+// --  Media -- //
+
+@import "_mixins.sass"
+
+
+//   ------   Min-width: size 1199px   ------   // [page]
++respond-to(my-set-1199)
+
+	// Секция 1
+	.section-one
+		.container
+			.row
+
+				// меняем положение основного изображения
+				.section-one__imges-main
+					right: 13%
+					background-position: 40% 0%
+
+	// Секция 2
+	.section-two
+		.container
+			.section-two__blocks
+				.line-slider
+					.line-slider__block
+
+						// Общаяя стилизация блока изображения
+						.line-slider__block-images
+							width: 200px
+							height: 200px
+
+	// Секция 6
+	.section-six
+		.container
+			.section-six__block-images
+				top: 230px
+				width: 50%
+				height: 350px
+
+
+//   ------   Max-width: size 991px   ------   // [page]
++respond-to(my-set-991)
+
+	// Секция 1
+	.section-one
+		.mob-menu
+			right: -350px
+		.container
+			.row
+				.section-one__header
+					justify-content: space-between
+					.contact,
+					.menu
+						display: none
+					.icon-burger
+						display: block
+
+				// меняем положение основного изображения
+				.section-one__imges-main
+					right: 50%
+					width: 205%
+					background-position: 18% 90%
+					background-size: 180%
+
+	// Секция 2
+	.section-two
+		.container
+			.section-two__blocks
+				.line-slider
+					.line-slider__block
+						width: 32.33%
+
+	// Секция 4
+	.section-four
+		.section-four__slider
+			.slider__block-slider
+				width: 80%
+
+	// Секция 5
+	.section-five
+		margin-bottom: 200px
+		.container
+			.section-five__blocks
+				// стилизация блока ↓
+				.blocks__block-info
+					width: 48%
+
+	// Секция 6
+	.section-six
+		.container
+			.section-six__block-info
+				&::before
+					top: -100px
+					// right: -100px
+					// width: 350px
+					// height: 350px
+					// background-size: 100%
+					// background-position: 50% 50%
+
+				.section-six__block-info__text
+					width: 60%
+			.section-six__block-images
+				top: 270px
+
+
+//   ------   Min-width: size 767px   ------   // [page]
++respond-to(my-set-767)
+
+	// Секция 1
+	.section-one
+		.container
+			.row
+				.section-one__main-title
+					// меняем положение основного заголовка
+					.main-title
+						margin-top: 80px
+						text-align: center
+					// меняем положение основного подзаголовка
+					.main-subtitle
+						text-align: center
+						margin-top: 15px
+						margin-bottom: 30px
+
+				// меняем положение кнопки
+				.section-one__button
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					margin: auto
+
+				// меняем положение подтекста
+				.section_one__podtekst
+					position: relative
+					margin-top: 30px
+					text-align: center
+					z-index: 1
+
+				// меняем положение основного изображения
+				.section-one__imges-main
+					top: -180px
+					right: 0
+					width: 100%
+					height: 350px
+					background-position: 50% 10%
+					background-size: 135%
+
+	// Секция 2
+	.section-two
+		.container
+			.section-two__blocks
+				.line-slider
+					.line-slider__block
+						width: 49%
+
+	// Секция 4
+	.section-four
+		.section-four__slider
+			.slider__block-slider
+				width: 100%
+
+		// Удаляем блок изображения слайдера
+		.slider__block-images
+			display: none
+
+	// Секция 5
+	.section-five
+		height: 750px
+		.container
+			.section-five__blocks
+				// стилизация блока ↓
+				.blocks__block-info
+					width: 100%
+					min-height: 250px
+					margin-bottom: 30px
+					text-align: center
+					.block-info__icon
+						margin: 0 auto
+
+						background-position: 50% 50%
+					.block-info__title
+						margin: 5px
+					.block-info__text
+						width: 70%
+						margin: 0 auto
+
+				// изображение ягод
+				.img-before
+					&::before
+						bottom: -80px
+						right: -10px
+
+	// Секция 6
+	.section-six
+		&::before
+			content: ''
+			position: absolute
+			top: 10px
+			left: 50px
+			width: 250px
+			height: 250px
+			background: url('../img/im/images-01.png')
+			background-size: 100%
+			background-repeat: no-repeat
+			background-position: 50% 50%
+
+		.container
+			.section-six__block-info
+				width: 100%
+				top: 140px
+				padding: 15px
+				&::before
+					display: none
+
+				.section-six__block-info__text
+					width: 100%
+			.section-six__block-images
+				display: none
+
+	// Футер
+	.main-content
+		padding-bottom: 500px !important
+	.footer
+		height: 500px !important
+		.container
+			.footer__logo
+				margin: 0 auto
+				width: 50%
+				text-align: center
+			.footer__menu
+				margin-top: 30px
+				text-align: left
+				li
+					padding-left: 0
+					padding-right: 15px
+			.social
+				width: 100%
+				float: left
+				.vk,
+				.insta,
+				.wa
+					float: left
+					margin-left: 0
+					margin-right: 15px
+
+
+//   ------   Max-width: size 574px   ------   // [page]
++respond-to(my-set-574)
+
+	// Секция 1
+	.section-one
+		.container
+			.row
+				.section-one__header
+					padding: 30px
+
+				.section-one__main-title
+					// меняем положение основного заголовка
+					.main-title
+						font-size: 2.6em
+					// меняем положение основного подзаголовка
+					.main-subtitle
+						font-size: 1em
+				// меняем положение подтекста
+				.section_one__podtekst
+					font-size: 0.9em
+
+	// Секция 2
+	.section-two
+		.container
+			.section-two__blocks
+				.line-slider
+					.line-slider__block
+						width: 99%
+
+	// Секция 3
+	.section-three
+		.section-three__oppa
+			width: 90%
+			margin: 0 auto
+
+//   ------   Max-width: size 415px   ------   // [page]
++respond-to(my-set-415)
+
+	// Секция 4
+	.section-four
+		.section-four__slider
+			.slider__block-slider
+				height: 440px
+				.block-slider__slide
+					height: 440px
+
+	// Секция 5
+	.section-five
+		.container
+			.section-five__blocks
+				.blocks__block-info
+					.block-info__text
+						width: 100%
+ // --  = Media -- //

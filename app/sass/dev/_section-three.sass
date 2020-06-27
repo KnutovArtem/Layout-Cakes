@@ -1,0 +1,126 @@
+// --  Секция 3 ------ //
+
+.section-three
+	position: relative
+	height: 580px
+	margin-bottom: 30px
+	display: flex
+	justify-content: center
+	align-items: center
+
+
+	// Модальное окно  ---------------------------------------------//
+
+	.wrapper-modal-window
+		display: none
+		position: fixed
+		top: 0
+		left: 0
+		width: 100vw
+		height: 100vh
+		background: rgba(0, 0, 0, 0.8)
+		z-index: 199
+
+		.modal-window
+			position: relative
+			margin: 0 auto
+			top: 12.5vh
+			width: 400px
+			height: 75vh
+			padding: 30px
+			border-radius: 5px
+			background: #ffffff
+			box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1)
+			z-index: 200
+
+			// крестик
+			.close
+				top: 30px
+				right: 30px
+
+			// блок расчёта
+			.modal-window__block-calculation
+				margin-top: 30px
+				width: 100%
+				height: 60%
+
+				select
+					width: 100%
+					height: 50px
+					border-radius: 5px
+					border: 1px solid #d3e0e9
+					padding-left: 15px
+					padding-right: 15px
+					margin-bottom: 15px
+					option
+						border: 1px dashed #e51f13
+						height: 50px
+						padding: 15px
+
+			.modal-window__summ
+				width: 100%
+				font-size: 30px
+				margin-top: 15px
+				margin-bottom: 15px
+
+
+			.modal-window__button
+				width: 100%
+
+
+
+	// x---------------------------------------------------------x //
+
+
+	.section-three__oppa
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 550px
+		height: auto
+		background: #ffffff
+		border-radius: 5px
+		padding: 30px 15px
+		text-align: center
+		box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1)
+		z-index: 10
+		.oppa__title,
+		.oppa_content,
+		.oppa__phone
+			margin-bottom: 15px
+
+	.layer
+		position: absolute
+
+	.par-img-bg
+		left: -5%
+		width: 120%
+		height: 580px
+		background: #f7f7f6 url('../img/paralax/images-paralax.png')
+		background-position: 10% 40%
+		background-size: 1100px
+		background-repeat: no-repeat
+
+	.par-img-1
+		top: 50px
+		left: 260px
+		background: url('../img/par-img-01.png')
+
+	.par-img-2
+		top: 480px
+		right: 250px
+		background: url('../img/par-img-02.png')
+
+	.par-img-1,
+	.par-img-2
+		width: 200px
+		height: 200px
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		background-size: 100%
+
+
+// --  End Секция 3 ------ //
+
+
+
